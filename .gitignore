@@ -1,0 +1,14 @@
+test_deeplab.py
+test_fcn8.py
+test_pspnet.py
+test_segnet.py
+test_unet.py
+train_deeplab.py
+train_pspnet.py
+
+train_fcn8.py
+train_segnet.py
+train_unet.py
+
+
+
