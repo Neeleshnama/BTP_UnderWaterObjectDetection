@@ -128,7 +128,7 @@ def trainDataGenerator(batch_size, train_path, image_folder, mask_folder, aug_di
         save_prefix  = "mask",
         seed = 1)
     # make pairs and return
-    for (img, mask) in it.izip(image_generator, mask_generator):
+    for (img, mask) in zip(image_generator, mask_generator):
         img, mask_indiv = processSUIMDataRFHW(img, mask, sal)
         yield (img, mask_indiv)
 

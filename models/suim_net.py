@@ -2,9 +2,10 @@
 # SUIM-Net model for underwater image segmentation
 # Paper: https://arxiv.org/pdf/2004.01241.pdf  
 """
+
 import tensorflow as tf
-from keras.models import Input, Model
-from keras.layers.convolutional import UpSampling2D, Conv2D
+from keras.layers import Input, Conv2D, UpSampling2D, BatchNormalization, Activation, MaxPooling2D
+from keras.models import Model
 from keras.layers import BatchNormalization, Activation, MaxPooling2D
 from keras.layers import add, Lambda, Concatenate, ZeroPadding2D
 from keras.optimizers import Adam, SGD
